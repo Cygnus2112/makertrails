@@ -12,16 +12,16 @@
 <div id="trailsForm" class="trailsForm navbar-inner-top navbar-inner">
   <form name="mapForm" class="text-xs-center">
     <div class="form-group">
-      <label for="map-name" class="sr-only">Give Your Map a Name:</label>
-      <input type="text" id="map-name" class="map-name form-control" name="trailname" ng-model="mapInfo.name" placeholder="Name Your Map" autocomplete="off" required>
+      <label for="map-name" class="sr-only">Give your map a name:</label>
+      <input type="text" id="map-name" class="map-name form-control" name="trailname" ng-model="mapInfo.name" placeholder="Name your map" autocomplete="off" required>
       <div ng-messages = "mapForm.trailname.$error" ng-if="mapForm.trailname.$dirty">
         <p ng-message="required" class="text-xs-center text-error">please name your map</p>
       </div>
     </div>
 
     <div class="form-group">
-      <label for="map-description" class="sr-only">Give Your Map a Description:</label>
-      <textarea id="map-description" class="form-control" name="traildesc" ng-model="mapInfo.description" rows="3" placeholder="Give Your Map a Description" required></textarea>
+      <label for="map-description" class="sr-only">Give your map a description:</label>
+      <textarea id="map-description" class="form-control" name="traildesc" ng-model="mapInfo.description" rows="3" placeholder="Give your map a description" required></textarea>
       <div ng-messages = "mapForm.traildesc.$error" ng-if="mapForm.traildesc.$dirty">
         <p ng-message="required" class="text-xs-center text-error">please describe your map</p>
       </div>
